@@ -9,7 +9,7 @@ def movimentoIA(board, jogador):
 		board[possibilidade[0]][possibilidade[1]] = "X" if jogador == 1 else "O"
 		valor = minimax(board, jogador)
 		board[possibilidade[0]][possibilidade[1]] = "-"
-		print("Peso atual compilado: ", possibilidade, valor)
+		#print("Peso atual compilado: ", possibilidade, valor)
 		if(melhor_valor is None):
 			melhor_valor = valor
 			melhor_movimento = possibilidade
